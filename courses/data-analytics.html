@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Highgrow Technology</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="./img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+    <style>
+        .course-container {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            background: linear-gradient(rgba(0, 0, 0, 0.663), rgba(0, 0, 0, 0.663));
+        }
+
+        .course-details {
+            padding: 50px;
+            z-index: 10;
+            height: max-content;
+            width: 70%;
+            background-color: white;
+            border-radius: 30px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .course-thumbnail {
+            aspect-ratio: 3/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid contact-info-container d-none d-md-flex justify-content-end align-items-center">
+        <div class="pt-2 contact-info mr-4">
+            <i class="fa-solid fa-regular fa-envelope"></i>
+            <span class="mx-2">support@higrow.in</span>
+        </div>
+        <div class="pl-0 pl-lg-4 pt-2 contact-info mr-4">
+            <i class="fa-solid fa-phone"></i>
+            <span class="mx-2">+91 63742 25832</span>
+        </div>
+        <div class="pl-0 pl-lg-4 pr-0 pr-lg-2 pt-2 consult-btn">
+            <a href="./contact.html?free=yes" class="btn">Free Consultation</a>
+        </div>
+    </div>
+    <a class="whatsapp-link" href="">
+        <img src="../images/whatsapp-logo.png" alt="whatsapp-logo" width="56" />
+    </a>
+    <a href="../contact.html" class="contact-link">Enquire Now</a>
+    <nav class="navbar navbar-expand-lg navbar-warning sticky-top" id="mainNavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/highgrow-logo-white.png" alt="logo" height="70" />
+                <span class="ml-2" style="position: relative; bottom: -13px;">TECHNOLOGY</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="d-flex align-items-center">
+                    <img src="../images/menu.svg" alt="menu icon" />
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./courses/about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html#courses">Courses</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu p-0" style="text-transform: none">
+                            <div class="d-flex flex-wrap p-2 p-sm-4">
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../seo.html">SEO</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../smm.html">SMM</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../ppc.html">PPC Advertising</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../facebook.html">FB Advertising</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../aso.html">ASO</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../native-ad.html">Native
+                                    Advertising</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../video.html">Video Marketing</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../email.html">Email Marketing</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../web.html">Web Development</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../logo.html">Logo Designing</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../sms.html">SMS Marketing</a>
+                                <a class="dropdown-item col-6 col-lg-4 p-2" href="../orm.html">ORM Marketing</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../clients.html">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../career.html">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Description Start -->
+    <div class="course-container">
+        <div class="course-details">
+            <h1 class="mt-5 mb-3">Excel Mastery: Beyond the Basics</h1>
+            <div class="course-content my-5">
+                <h3>What will you learn?</h3>
+                <div class="row py-2">
+                    <div class="col-sm-3 col-md-2">
+                        <p>Data Cleaning</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <p>Formulae & Functions</p>
+                    </div>
+                    <div class="col-sm-3 col-md-2">
+                        <p>Pivot Tables</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p>Charts & Graphs</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <p>Conditional Formatting</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p>Data Validation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="course-desc my-5">
+                <h3>This course includes</h3>
+                <div class="row py-2">
+                    <div class="col-sm-4 col-md-3">
+                        <p>Weekly Live Classes</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <p>4 Real Projects</p>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <p>Zoom Classes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Course Description End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/data-analytics-header.jpg), no-repeat center center; background-size: cover;">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                <h3 class="display-4 text-white text-uppercase">Data Analytics</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="./index.html">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Data Analytics</p>
+                </div>
+                <a href="../contact.html" class="btn btn-lg btn-primary" style="width: 170px; margin-top: 15px;">
+                    Enroll Now
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Courses Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
+                <h1>Data Analytic Courses</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid course-thumbnail" src="./img/advanced-excel1.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
+                            </div>
+                            <a class="h5" href="">Excel Mastery: Beyond the Basics</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid course-thumbnail" src="img/Sql.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>10h 00m</small>
+                            </div>
+                            <a class="h5" href="">Database Querying and Management with SQL</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid course-thumbnail" src="img/python.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>15h 00m</small>
+                            </div>
+                            <a class="h5" href="">Python Programming: From Fundamentals to Advanced</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid course-thumbnail bg-secondary" src="img/powerbi.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
+                            </div>
+                            <a class="h5" href="">Power BI Essentials: Data Visualization Fundamentals</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid course-thumbnail" src="img/tableau.jpg" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>05h 00m</small>
+                            </div>
+                            <a class="h5" href="">Tableau Fundamentals: Data Visualization and Analytics</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="rounded overflow-hidden mb-2">
+                        <img class="img-fluid course-thumbnail" src="img/placement.png" alt="">
+                        <div class="bg-secondary p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>25 Students</small>
+                                <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>30h 00m</small>
+                            </div>
+                            <a class="h5" href="">Career Boost: Placements & Portfolio Mastery</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(25)</small>
+                                    </h6>
+                                    <h5 class="m-0">₹14,999</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Courses End -->
+
+    <div class="why-choose-us container my-5">
+        <div class="mb-4">
+            <h3 class="text-uppercase mb-3" style="font-weight: 300 !important;">
+                Why Enroll in Our Online Course in <span class="highlight">Data Analytics</span>?
+            </h3>
+            <!-- <h1>HI<span class="highlight">Grow</span> Media</h1> -->
+        </div>
+        <ul class="p-0 text-align-justify" style="list-style-type: none;">
+            <li>
+                <h5 style="color: #403f44; font-weight: 300 !important;">
+                    <b>Flexibility</b>
+                </h5>
+                <p>
+                    Highgrow Online courses allow you to learn at your own pace and on your own schedule. This is ideal
+                    for people who have busy schedules or who live in remote locations.
+                </p>
+            </li>
+            <li>
+                <h5 style="color: #403f44; font-weight: 300 !important;">
+                    <b>Affordability</b>
+                </h5>
+                <p>
+                    Highgrow online courses are typically more affordable than traditional classroom-based courses. This
+                    is because online courses have lower overhead costs.
+                </p>
+            </li>
+            <li>
+                <h5 style="color: #403f44; font-weight: 300 !important;">
+                    <b>Variety</b>
+                </h5>
+                <p>
+                    There is a wide variety of data analytics online courses available, from introductory courses to
+                    advanced courses on specific topics such as machine learning or data mining. This allows you to
+                    choose a course that is right for your skill level and career goals.
+                </p>
+            </li>
+            <li>
+                <h5 style="color: #403f44; font-weight: 300 !important;">
+                    <b>Hands-on experience</b>
+                </h5>
+                <p>
+                    Highgrow gives you online data analytics courses offer hands-on experience with real-world data
+                    sets. This means that you can apply the knowledge and skills you learn in class to real-world
+                    problems and challenges.
+                </p>
+            </li>
+            <li>
+                <h5 style="color: #403f44; font-weight: 300 !important;">
+                    <b>Career advancement</b>
+                </h5>
+                <p>
+                    By taking highgrow online data analytics course, you can demonstrate your commitment to learning and
+                    your desire to develop your skills. This can make you a more attractive candidate to potential
+                    employers.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="course-content container my-5 px-3">
+        <h1 class="text-uppercase" style="font-weight: 300 !important;">Course <span class="highlight">Content</span>
+        </h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">
+                        <b>Module 1:</b>
+                        Introduction to Data Analytics
+                    </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        &emsp;&emsp;What is data analytics?
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Why is data analytics important?
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Different types of data analytics
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Different tools and techniques used in data analytics
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Different career paths in data analytics
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title">
+                        <b>Module 2:</b>
+                        Data Cleaning and Preparation
+                    </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        &emsp;&emsp;How to identify and remove errors and inconsistencies from data?
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Formatting data in a consistent way
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Splitting data for training &amp; testing models
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title">
+                        <b>Module 3: </b>
+                        Data Visualization
+                    </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        &emsp;&emsp;Different types of data visualizations
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Choosing right data visualization
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Data Visualizations using Tableau, Power BI
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title">
+                        <b>Module 4: </b>
+                        Structured Query Language (SQL)
+                    </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        &emsp;&emsp;Creating Tables
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Manipulate data in relations
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title">
+                        <b>Module 5: </b>
+                        Python for Data Analytics
+                    </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        &emsp;&emsp;Basics of Python Language
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Python Modules for Data Analytics
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Advanced Data Analytical Techniques in Python
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-6" aria-expanded="false">
+                    <span class="accordion-title">
+                        <b>Module 6: </b>
+                        R for Data Analytics
+                    </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        &emsp;&emsp;Basics of R Language
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Practicing Data Analytics in R
+                    </p>
+                    <hr>
+                    <p>
+                        &emsp;&emsp;Advanced Data Analytical Techniques in R
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="">
+                    <span class="accordion-title">
+                        <b>Module 7: </b>
+                        Machine Learning for Data Analytics
+                    </span>
+                </button>
+            </div>
+            <div class="accordion-item">
+                <button id="">
+                    <span class="accordion-title">
+                        <b>Module 8: </b>
+                        Data Analytics Capstone Project
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="px-5 py-3">
+        <div class="row justify-content-around">
+            <div class="col-xl-3 col-sm-6 p-4">
+                <h3 class="text-uppercase">About Us</h3>
+                <p class="text-white py-4">
+                    At our growth marketing company, we pride ourselves on our
+                    innovative approach to advertising. Our team uses a range of
+                    cutting-edge techniques to help your brand connect with even the
+                    most niche audience. Whether you're looking to boost your business
+                    growth or stand out in a crowded market, we're here to support you
+                    at every stage of your journey.
+                </p>
+            </div>
+            <div class="col-xl-2 col-sm-6 p-4">
+                <h3 class="text-uppercase">Quick Links</h3>
+                <ul class="px-1 py-4">
+                    <li class="py-2">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="./clients.html">Business Domains</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="./career.html">Career</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-2 col-sm-6 p-4">
+                <h3 class="text-uppercase">Services</h3>
+                <ul class="px-1 py-4">
+                    <li class="py-2">
+                        <a href="./seo.html">Search Engine Optimization</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="./smm.html">Social Media Management</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="./web.html">Web Development</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="./logo.html">Logo Designing</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="./sms.html">SMS Marketing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-sm-6 p-4">
+                <h3 class="text-uppercase">Contact Us</h3>
+                <ul class="px-1 py-4">
+                    <li class="py-2">
+                        <i class="fa-solid fa-regular fa-envelope"></i>
+                        <span class="pl-2">contact@higrow.in</span>
+                    </li>
+                    <li class="py-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="pl-2">+91 63742 25832</span>
+                    </li>
+                    <li class="py-2">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        <span class="pl-2">Chennai</span>
+                    </li>
+                    <li class="py-2">
+                        <div class="social-container py-1">
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="../js/scroll-out.js"></script>
+    <script>
+        ScrollOut({
+            targets:
+                "footer *",
+        });
+    </script>
+</body>
+
+</html>
