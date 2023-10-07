@@ -156,6 +156,11 @@ body {
   outline: none;
   padding: 10px 30px;
   font-size: larger;
+  transition: 0.2s ease-out;
+}
+
+.enroll-btn:hover {
+  text-decoration: none;
 }
 
 .count-section-parent {
@@ -182,7 +187,7 @@ body {
   aspect-ratio: 1;
 }
 
-.count-section .count>* {
+.count-section .count > * {
   color: white;
 }
 
@@ -233,9 +238,11 @@ body {
   display: inline-block;
   position: absolute;
   z-index: 1;
-  background: linear-gradient(45deg,
-      rgba(207, 88, 207, 0.384),
-      rgb(207, 88, 207));
+  background: linear-gradient(
+    45deg,
+    rgba(207, 88, 207, 0.384),
+    rgb(207, 88, 207)
+  );
   left: 10%;
   top: 5vh;
 }
@@ -247,9 +254,11 @@ body {
   display: inline-block;
   position: absolute;
   z-index: 1;
-  background: linear-gradient(45deg,
-      rgba(235, 71, 139, 0.384),
-      rgb(235, 71, 139));
+  background: linear-gradient(
+    45deg,
+    rgba(235, 71, 139, 0.384),
+    rgb(235, 71, 139)
+  );
   right: 5%;
   top: 20vh;
 }
@@ -276,9 +285,11 @@ body {
 
 .unshaped-2 {
   border-radius: 79% 74% 36% 77% / 53% 79% 38% 91%;
-  background: linear-gradient(45deg,
-      rgb(17, 161, 245),
-      rgba(17, 161, 245, 0.404));
+  background: linear-gradient(
+    45deg,
+    rgb(17, 161, 245),
+    rgba(17, 161, 245, 0.404)
+  );
   position: absolute;
   display: inline-block;
   width: 100px;
@@ -346,7 +357,7 @@ body {
   max-width: 100%;
 }
 
-.sec-1-img>img {
+.sec-1-img > img {
   position: relative;
   z-index: 5;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
@@ -534,8 +545,10 @@ body {
 
 .seo-hero {
   min-height: 80vh;
-  background-image: linear-gradient(rgba(23, 14, 59, 0.85),
-      rgba(23, 14, 59, 0.85)),
+  background-image: linear-gradient(
+      rgba(23, 14, 59, 0.85),
+      rgba(23, 14, 59, 0.85)
+    ),
     url("../images/seo-wallpaper.jpg");
   background-size: cover;
   background-position: 0 -100px;
@@ -627,12 +640,12 @@ footer *[data-scroll="in"] {
   box-shadow: none;
 }
 
-.seo-services .seo-service>button {
+.seo-services .seo-service > button {
   color: grey;
   font-size: 1.8vh;
 }
 
-.seo-services .seo-service.focussed>button {
+.seo-services .seo-service.focussed > button {
   color: rgb(76, 173, 120);
   border-bottom: 5px solid rgb(76, 173, 120);
   font-weight: 900;
@@ -674,7 +687,9 @@ footer *[data-scroll="in"] {
   box-shadow: none;
 }
 
-.seo-sec-2 .card-header button[class="btn btn-block text-left py-3 px-4 d-flex align-items-center"] {
+.seo-sec-2
+  .card-header
+  button[class="btn btn-block text-left py-3 px-4 d-flex align-items-center"] {
   background-color: white;
 }
 
@@ -683,7 +698,10 @@ footer *[data-scroll="in"] {
   transition: 0.2s;
 }
 
-.seo-sec-2 .card-header button[class="btn btn-block text-left py-3 px-4 d-flex align-items-center"] span {
+.seo-sec-2
+  .card-header
+  button[class="btn btn-block text-left py-3 px-4 d-flex align-items-center"]
+  span {
   color: rgb(76, 173, 120);
   transform: rotate(180deg) translateY(5px);
   transition: 0.2s;
@@ -730,7 +748,7 @@ footer *[data-scroll="in"] {
   color: rgb(85, 85, 85);
 }
 
-.seo-sec-3>.row {
+.seo-sec-3 > .row {
   margin: 0;
 }
 
